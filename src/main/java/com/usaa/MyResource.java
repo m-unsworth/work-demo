@@ -14,8 +14,7 @@ public class MyResource {
 	@Produces("application/json")
 	public HashMap<String,String> getResource() {
 		HashMap<String, String> theResource = new HashMap<String, String>();
-		theResource.put("someAttr", "value");
-		theResource.put("someAttr2", "value 2");
+		theResource.put("attr1", "value 1");
 		return theResource;
 	}
 }
