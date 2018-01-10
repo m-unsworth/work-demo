@@ -7,14 +7,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 @RequestScoped
-@Path("/insult")
+@Path("/resources")
 public class MyResource {
 	
 	@GET()
 	@Produces("application/json")
-	public HashMap<String,String> getInsult() {
-		HashMap<String, String> theInsult = new HashMap<String, String>();
-		theInsult.put("someName", "value");
+	public HashMap<String,String> getResource() {
+		HashMap<String, String> theResource = new HashMap<String, String>();
+		theInsult.put("someAttr", "value");
 		return theInsult;
 	}
 }
